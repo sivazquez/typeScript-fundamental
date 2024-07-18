@@ -1,8 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.var14Undefined = exports.var13Null = exports.var11ArrayOfAny = exports.var10Enum = exports.Color = exports.var9Tuple = exports.var8NumericArray = exports.var7Array = exports.var6String = exports.var5Octal = exports.var4Binary = exports.var3Hex = exports.var2Decimal = exports.var1Boolean = void 0;
-exports.var12VoidFunction = var12VoidFunction;
-exports.var15NeverFunction = var15NeverFunction;
+exports.var15NeverFunction = exports.var14Undefined = exports.var13Null = exports.var12VoidFunction = exports.var11ArrayOfAny = exports.var10Enum = exports.Color = exports.var9Tuple = exports.var8NumericArray = exports.var7Array = exports.var6String = exports.var5Octal = exports.var4Binary = exports.var3Hex = exports.var2Decimal = exports.var1Boolean = void 0;
 // exercise https://www.codewars.com/kata/5914c6ee51f1d39b5600001c/train/typescript
 // Boolean
 exports.var1Boolean = true;
@@ -30,9 +28,11 @@ exports.var10Enum = Color.Blue;
 exports.var11ArrayOfAny = [1, 'test', { a: 3 }, 4, 5];
 // Void
 function var12VoidFunction() { }
+exports.var12VoidFunction = var12VoidFunction;
 ;
 //Null and Undefined
 exports.var13Null = null;
 // Never
 function var15NeverFunction() { throw new Error; }
+exports.var15NeverFunction = var15NeverFunction;
 ;

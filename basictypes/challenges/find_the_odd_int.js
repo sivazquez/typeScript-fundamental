@@ -1,3 +1,4 @@
+"use strict";
 /*
 Given an array of integers, find the one that appears an odd number of times.
 
@@ -12,35 +13,30 @@ Examples
 
 https://www.codewars.com/kata/54da5a58ea159efa38000836/typescript
 */
-var xs = [5, 4, 3, 2, 1, 5, 4, 3, 2, 10, 10];
-xs.reduce(function (a, b) { return a ^ b; });
-console.log(xs.reduce(function (a, b) { return a ^ b; }));
-/*
-export const findOdd = (xs: number[]): number => {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.findOdd = void 0;
+const findOdd = (xs) => {
     //get unique values numbers in array
-    let unique:number[] = xs.filter((x,i,a)=>a.indexOf(x)=== i);
-    let odd:number = 0;
-    let oddTimesRepeted:number = xs.length+1;
+    let unique = xs.filter((x, i, a) => a.indexOf(x) === i);
+    let odd = 0;
+    let oddTimesRepeted = xs.length + 1;
     //Repetitive click to compare each element the times it is repeated and if it is repeated, know if it is odd and if it is the smallest of the repetitions, indicate it.
-    unique.forEach(function(numeroBuscar){
-        let vecesRepetido:number = 0;
-        xs.forEach(function(buscarNum){
-            if(numeroBuscar === buscarNum){
-                vecesRepetido = vecesRepetido+1;
+    unique.forEach(function (numeroBuscar) {
+        let vecesRepetido = 0;
+        xs.forEach(function (buscarNum) {
+            if (numeroBuscar === buscarNum) {
+                vecesRepetido = vecesRepetido + 1;
             }
         });
-       
-        if((vecesRepetido%2) != 0){
-             // ES ODD
-            if(vecesRepetido < oddTimesRepeted ){
+        if ((vecesRepetido % 2) != 0) {
+            // ES ODD
+            if (vecesRepetido < oddTimesRepeted) {
                 odd = numeroBuscar;
                 oddTimesRepeted = vecesRepetido;
-                vecesRepetido = 0
+                vecesRepetido = 0;
             }
         }
     });
     return odd;
-  };
-  
-
-*/ 
+};
+exports.findOdd = findOdd;
