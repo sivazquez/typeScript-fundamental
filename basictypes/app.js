@@ -6,4 +6,5 @@
         console.log(msg);
     }
     printMsg(a);
+    console.log("test ts config");
 })();

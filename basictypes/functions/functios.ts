@@ -30,3 +30,4 @@ const noHaceNada = ( numero:number, texto:string, booleano:boolean, arreglo:stri
 // Crear el tipo de funcion que acepte la funcion "noHaceNada"
 let noHaceNadaTampoco: ( numero:number, texto:string, booleano:boolean, arreglo:string[] ) => void;
 noHaceNadaTampoco = noHaceNada;
+console.log("test tsc");
