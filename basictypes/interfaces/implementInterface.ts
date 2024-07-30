@@ -1,5 +1,8 @@
 import { Cliente, Address } from "./interfaces";
 
+interface AddNumbers{
+    (a: number, b: number):number;
+}
 const cliente:Cliente = {
     name: "Ivan",
     lastName: "Vazquez",
@@ -15,3 +18,9 @@ const cliente:Cliente = {
 
 console.log(cliente);
 console.log(cliente.getFullAdress());
+
+let addNumber:AddNumbers;
+
+addNumber = (a:number, b:number):number =>{
+    return a + b;
+}
