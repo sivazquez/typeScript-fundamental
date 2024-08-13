@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /*import { generericfunction, genericfunctionArrow} from "./generics/generics."
 import {getPokemon} from "./generics/get-pokemon";
 import {Pokemon} from "./interfaces"
@@ -12,12 +14,7 @@ console.log(generericfunction(3.1416).toFixed(2) );
 console.log(generericfunction("ivan").toUpperCase() );
 console.log(genericfunctionArrow(new Date()).getDay());*/
 //? decoradores
-import { Pokemon } from "./decoradores";
-
-(Pokemon.prototype as any).newkey = 'Otrakey';
-
-const charmander = new Pokemon("Charmander");
-
-console.log(charmander);
-
+var decoradores_1 = require("./decoradores");
+decoradores_1.Pokemon.prototype.newkey = 'Otrakey';
+var charmander = new decoradores_1.Pokemon("Charmander");
 charmander.savePokemonToDB(100);
