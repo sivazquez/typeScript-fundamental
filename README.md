@@ -8,3 +8,9 @@
 - Watch mode
 `tsc --watch`
 
+# Car dealear ship
+Popullate DB
+```
+    http://localhost:3000/seed/cars
+    http://localhost:3000/seed/brands
+```
